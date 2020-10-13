@@ -29,10 +29,13 @@ int main()
   // Copy array from built-in array, then expand.
   double x[] = { 10.5, 11.5, 12.5, 13.5 };
   MyArray b(x, 4);
+  
+
+  
   b.resize(7);
   for (i = 4; i < b.size(); i++)
     b.set(i, 10.5 + i);
-
+  
   cout << "Elements of b after first resize: ";
   for (i = 0; i < b.size(); i++)
     cout << ' ' << b.at(i);
