@@ -27,6 +27,7 @@ int main()
   cout << "(Expected:      " << "0.5 1.5 2.5 3.5 4.5)\n\n";
 
   // Copy array from built-in array, then expand.
+  
   double x[] = { 10.5, 11.5, 12.5, 13.5 };
   MyArray b(x, 4);
   

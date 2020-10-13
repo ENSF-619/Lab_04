@@ -22,8 +22,8 @@ String_Vector transpose(const String_Vector& sv);
 
 int main() {
     
-    const int ROWS = 5;
-    const int COLS = 4;
+    const int ROWS = 10;
+    const int COLS = 6;
     
     char c = 'A';
     String_Vector sv;
@@ -57,8 +57,26 @@ int main() {
 String_Vector transpose (const String_Vector& sv) {
     
     // STUDENTS MUST COMPLETE THE DEFINITION OF THIS FUNCTION.
-     
     String_Vector vs;
+   
+    
+   
+    vs.resize(sv.at(0).size());
+    for (int i = 0; i < sv.size();i++) {
+
+        for (int j = 0;j < sv.at(i).size();j++)
+
+            vs.at(j).push_back(sv.at(i).at(j));
+
+    }
+            //vs.at(j).at(i) = sv.at(i).at(j);
+        
+
+    
+    
+
+    
+
     return vs;
     
 }
