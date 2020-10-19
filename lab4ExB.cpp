@@ -22,8 +22,8 @@ String_Vector transpose(const String_Vector& sv);
 
 int main() {
     
-    const int ROWS = 10;
-    const int COLS = 6;
+    const int ROWS = 4;
+    const int COLS = 5;
     
     char c = 'A';
     String_Vector sv;
@@ -44,7 +44,7 @@ int main() {
         cout<< sv.at(i);
         cout << endl;
     }
-    
+    cout << "\nTransposed Matrix: " << endl;
     String_Vector vs = transpose(sv);
     for(int i = 0; i < (int)vs.size(); i++)
         cout << vs.at(i) << endl;
@@ -56,10 +56,8 @@ int main() {
 
 String_Vector transpose (const String_Vector& sv) {
     
-    // STUDENTS MUST COMPLETE THE DEFINITION OF THIS FUNCTION.
-    String_Vector vs;
-   
-    
+     String_Vector vs;
+     
    
     vs.resize(sv.at(0).size());
     for (int i = 0; i < sv.size();i++) {
@@ -68,15 +66,7 @@ String_Vector transpose (const String_Vector& sv) {
 
             vs.at(j).push_back(sv.at(i).at(j));
 
-    }
-            //vs.at(j).at(i) = sv.at(i).at(j);
-        
+    }  
 
-    
-    
-
-    
-
-    return vs;
-    
+    return vs;  
 }

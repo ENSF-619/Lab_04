@@ -16,9 +16,10 @@ void insertion_sort(int *int_array, int n, int sort_order);
  */
 
 
-int main()
+int main(int argc, int ** argv)
 {
-    int sort_order = 1; // 1 for ascending order and 2 for descending order
+
+    int sort_order = 2; // 1 for ascending order and 2 for descending order
     
     int a[] = { 413, 282, 660, 171, 308, 537 };
     
